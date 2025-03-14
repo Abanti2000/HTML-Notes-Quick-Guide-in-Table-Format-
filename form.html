@@ -1,0 +1,46 @@
+<!--Ek HTML form banao jisme:
+✅ Name & Email input ho
+✅ Password field ho
+✅ Gender select karne ke liye radio button ho
+✅ Hobbies select karne ke liye checkbox ho
+✅ Ek Submit button ho-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User form</title>
+</head>
+
+<body>
+    <h3>User form</h3>
+    <form action="thank you.html" method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Only alphabets allowed" required>
+    <br><br>
+    <label for="Gender">Male</label>
+    <input type="radio" id="Male" name="Gender">
+    <label for="Gender">Female</label>
+    <input type="radio" id="Female" name="Gender">
+    <label for="Gender">Others</label>
+    <input type="radio" id="Others" name="Gender">
+    <br><br>
+    <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+    <br>
+
+    <label><input type="checkbox" name="hobby" value="music"> Music</label>
+    <br>
+
+    <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+    <br>
+
+    <label><input type="checkbox" name="hobby" value="coding"> Coding</label>
+    <br><br>
+    <label for="Email">Email:</label>
+    <input type="email" id="email" name="Email" pattern="\w+@\w+\.\w+" title="Only valid Email allowed" required>
+    <br><br>
+    <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

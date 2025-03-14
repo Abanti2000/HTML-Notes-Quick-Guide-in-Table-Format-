@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  h2, h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Clean table borders */
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px; /* Smaller text for mobile */
+  }
+  
+  @media (max-width: 768px) { 
+    table {
+      display: block;
+      overflow-x: auto; /* Enable horizontal scroll */
+      white-space: nowrap; /* Prevents text wrapping */
+    }
+  
+    th, td {
+      font-size: 12px; /* Adjust text size */
+      padding: 8px; /* Less padding on small screens */
+    }
+  }
+  

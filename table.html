@@ -1,0 +1,72 @@
+<!--1️⃣ Ek Table banao jisme 4 columns ho – (Product, Price, Quantity, Availability)
+2️⃣ 4 rows add karo – (Apples, Bananas, Mangoes, Grapes)
+3️⃣ Ek row me colspan ya rowspan ka use karke merge karo-->
+
+<table border="1">
+   
+    <thead>
+        <tr><th colspan="4">Product list</th></tr>
+      
+        <th>Product</th>
+        <th>Price</th>
+        <th> Quantity</th>
+        <th>Availability</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Apple</td>  <!-- 2 Rows Merge -->
+            <td>300</td>
+            <td>3kg</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>250</td>
+            <td>2kg</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td>Bananas</td>
+            <td>400</td>
+            <td>4kg</td>
+            <td>Available in all stores</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Mango</td>  <!-- Mango ek hi baar likha -->
+            <td>400</td>
+            <td>5kg</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>350</td>
+            <td>4kg</td>
+            <td>Limited Stock</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>3kg</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td>Grapes</td>
+            <td>460</td>
+            <td>1kg</td>
+            <td>Available in all stores</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">**Special Discount Available!**</td> 
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>₹30</td>
+            <td>1 dozen</td>
+        </tr>
+
+        
+        
+    </tbody>
+
+
+</table>
+
+
+
