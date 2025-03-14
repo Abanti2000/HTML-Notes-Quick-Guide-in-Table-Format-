@@ -1,0 +1,351 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2> HTML Notes (Quick Guide in Table Format)</h2>
+   
+    <table border="1">
+        <thead>
+           <th colspan="4"> <h3>1️⃣ Basic Structure (HTML Document)</h3></th>
+            <tr>
+                <th>Tag</th>
+                <th>Use (Purpose)</th>
+                <th>Position (Where to Write?)</th>
+                <th>Example</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>&lt;html&gt;</td>
+                <td>Main HTML document container</td>
+                <td>Starts first (root tag)</td>
+                <td>&lt;html lang="eng"&gt;...&lt;html&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;head&gt;</td>
+                <td>Metadata, title, CSS, JS</td>
+                <td>Inside &lt;html&gt;, before <body></td>
+                <td>&lt;head&gt;&lt;title&gt;My Page&gt;&lt;title&gt;&lt;head&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;body&gt;</td>
+                <td>Main content of the page</td>
+                <td>Inside &lt;html&gt;, after &lt;head&gt;</td>
+                <td>&lt;body&gt;Content here&lt;body&gt;</td>
+            </tr>
+        </tbody>
+        </table>
+         <table border="1">
+            <thead>
+                <th colspan="4"><h3>2️⃣ Text Elements (Headings, Paragraphs, Lists, Links, Images)</h3></th>
+                <tr>
+                   <th>Tag</th>
+                    <th>Use (Purpose)</th>
+                    <th>Attributes (Options)</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                    <td>Headings (Titles)</td>
+                    <td>&lt;h1&gt; largest, &lt;h6&gt; smallest</td>
+                    <td>&lt;h2&gt;My Skills&lt;/h2&gt</td>;
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph text</td>
+                    <td>No required attributes</td>
+                    <td>&lt;p&gt;This is a paragraph.&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Line break</td>
+                    <td>No required attributes</td>
+                    <td>&lt;p&gt;Hello&lt;br&gt;World&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Unordered List (Bullets)</td>
+                    <td>No required attributes</td>
+                    <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Ordered List (Numbers)</td>
+                    <td>No required attributes</td>
+                    <td>&lt;ol&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ol&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>List Item</td>
+                    <td>Only inside &lt;ul&gt; or &lt;ol&gt;</td>
+                    <td>&lt;li&gt;Item&lt;/li&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Hyperlink (Add a link)</td>
+                    <td>href="URL" required</td>
+                    <td>&lt;a href="https://example.com">Click Here&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Display an image</td>
+                    <td>src="image.jpg", alt="desc"</td>
+                    <td>&lt;img src="logo.png" alt="Company Logo"&gt;</td>
+                </tr>
+                
+            </tbody>
+        </table>
+           <br>
+            <table border="1">
+                <thead>
+                    <th colspan="3"> <h3>3️⃣ Forms & Inputs (User Interaction)</h3></th>
+                    <tr>
+                        <th>Tag/Attribute</th>
+                        <th>Use (Purpose)</th>
+                        <th>Example</th>
+                       </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Creates a form</td>
+                        <td>&lt;form action="submit.php">&lt;/form&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>Label for input fields</td>
+                        <td>&lt;label for="name"&gt;Enter Name:&lt;/label&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>User input field</td>
+                        <td>&lt;input type="text" name="username"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>type="text"</td>
+                        <td>Simple text input</td>
+                        <td>&lt;input type="text" placeholder="Enter Name"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>type="password"</td>
+                        <td>Password input (hidden text)</td>
+                        <td>&lt;input type="password"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>type="email"</td>
+                        <td>Email input with validation</td>
+                        <td>&lt;input type="email"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>type="number"</td>
+                        <td>Accepts only numbers</td>
+                        <td>&lt;input type="number" min="1" max="100"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>type="date"</td>
+                        <td>Date picker</td>
+                        <td>&lt;input type="date"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>type="radio"</td>
+                        <td>Radio button (One option)</td>
+                        <td>&lt;input type="radio" name="gender" value="male"&gt;Male</td>
+                    </tr>
+                    <tr>
+                        <td>type="checkbox"</td>
+                        <td>Checkbox (Multiple selection)</td>
+                        <td>&lt;input type="checkbox" name="hobby" value="Singing"&gt; Singing</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Dropdown menu</td>
+                        <td>&lt;select&gt;&lt;option&gt;HTML&lt;/option&gt;&lt;/select&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td>Auto-suggest Input Field</td>
+                        <td>&lt;input list="languages"&gt;&lt;datalist id="languages"&gt;&lt;option value="HTML"&gt;&lt;/datalist&gt;</td>
+                    </tr>
+                </tbody>
+           </table>
+           <br>
+<table border="1">
+    <thead>
+        <th colspan="3"><h3>4️⃣ Tables (Displaying Data)</h3></th>
+        <tr>
+            <th>Tag</th>
+            <th>Use (Purpose)</th>
+            <th>Example</th>
+         </tr>
+        </thead>
+         <tbody>
+            <tr>
+                <td>&lt;table></td>
+                <td>Creates a table</td>
+                <td>&lt;table>...&lt;/table></td>
+            </tr>
+            <tr>
+                <td>&lt;tr></td>
+                <td>Defines a table row</td>
+                <td>&lt;tr>...&lt;/tr></td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Table Headings</td>
+                <td>&lt;th&gt;Heading&lt;/th&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Table Data</td>
+                <td>&lt;td&gt;Data&lt;/td&gt;</td>
+            </tr>
+            <tr>
+                <td>colspan="2"</td>
+                <td>Merges two columns</td>
+                <td>&lt;td colspan="2"&gt;Merged&lt;/td&gt;</td>
+            </tr>
+            <tr>
+                <td>rowspan="2"</td>
+                <td>Merges two rows</td>
+                <td>&lt;td rowspan="2"&gt;Merged&lt;/td&gt;</td>
+            </tr>
+         </tbody>
+   </table>
+<br>
+<table border="1">
+    <thead>
+        <th colspan="3">5️⃣ Semantic Tags (Better Page Structure)</th>
+        <tr>
+            <th>Tag</th>
+            <th>Use (Purpose)</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt;header&gt;</td>
+            <td>Top Section (Title, Navbar)</td>
+            <td>&lt;header>Welcome!&lt;/header&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;nav></td>
+            <td>Navigation menu</td>
+            <td>&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/nav&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;section&gt;</td>
+            <td>Divides main content</td>
+            <td>&lt;section&gt;About Me&lt;/section&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;article&gt;</td>
+            <td>Blog post or content block</td>
+            <td>&lt;article&gt;My Story&lt;/article&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Bottom section of the page</td>
+            <td>&lt;footer&gt;Copyright 2025&lt;/footer&gt;</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<table border="1">
+    <thead>
+        <th colspan="3"><h3>6️⃣ Multimedia (Audio, Video, Embed)</h3></th>
+        <tr>
+            <th>Tag</th>
+            <th>Use (Purpose)</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>&lt;audio&gt;</td>
+          <td>Plays an audio file</td>
+          <td>&lt;audio controls src="song.mp3"&gt;&lt;/audio&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;video></td>
+            <td>Plays a video file</td>
+            <td>&lt;video controls src="video.mp4"&gt;&lt;/video&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;iframe></td>
+            <td>Embeds external content</td>
+            <td>&lt;iframe src="YouTube Video URL"&gt;&lt;/iframe&gt;</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table border="1">
+    <thead>
+        <th colspan="2"><h3>7️⃣ Correct Webpage Structure Order (HTML Layout)</h3></th>
+        <tr>
+            <th>Step</th>
+            <th>Section (What to Write First?)</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1️⃣</td>
+            <td>&lt;html&gt; (HTML Start)</td>
+        </tr>
+        <tr>
+            <td>2️⃣</td>
+            <td>&lt;head&gt; (Title, Meta Tags, CSS, JS)</td>
+        </tr>
+        <tr>
+            <td>3️⃣</td>
+            <td>&lt;body&gt; (Main Content)</td>
+        </tr>
+        <tr>
+            <td>4️⃣</td>
+            <td>&lt;header&gt; (Top Section)</td>
+        </tr>
+        <tr>
+            <td>5️⃣</td>
+            <td>&lt;nav&gt; (Navigation)</td>
+        </tr>
+        <tr>
+            <td>6️⃣</td>
+            <td>&lt;section&gt; (Main Page Content)</td>
+        </tr>
+        <tr>
+            <td>7️⃣</td>
+            <td>&lt;article&gt; (Detailed Content)</td>
+        </tr>
+        <tr>
+            <td>8️⃣</td>
+            <td>&lt;ul&gt; or &lt;ol&gt; (Lists)</td>
+        </tr>
+        <tr>
+            <td>9️⃣</td>
+            <td>&lt;table>&gt;(For structured data)</td>
+        </tr>
+        <tr>
+            <td>🔟</td>
+            <td>&lt;form&gt; (For user input)</td>
+        </tr>
+        <tr>
+            <td>🔹</td>
+            <td>&lt;audio&gt;, &lt;video&gt;, &lt;iframe&gt; (Multimedia)</td>
+        </tr>
+        <tr>
+            <td>🔚</td>
+            <td>&lt;footer&gt; (Copyright & Contact)</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+    </table>
+</body>
+</html>
